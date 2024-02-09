@@ -31,7 +31,6 @@ public class LoopingConstruct {
                 max =val;
             } else if (val < min) {
                 min =val;
-
             }if(numInputs ==5){    //if statement to limit the amount of inputs
                 tot = sumTot + val;
                System.out.println("Your total is: " +tot);
