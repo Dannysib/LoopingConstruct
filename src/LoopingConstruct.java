@@ -38,8 +38,9 @@ public class LoopingConstruct {
                interest = (float) (tot * .2);
                System.out.println("Your total is: " +tot);
                System.out.println("Your average value is: " + avg);
-               System.out.println("Your interest is: " + interest);
                System.out.println("Your maximum value is: "+max);
+               System.out.println("Your minimum value is: "+min);
+               System.out.println("Your interest is: " + interest);
             }
         }
     }
