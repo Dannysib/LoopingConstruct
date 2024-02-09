@@ -10,17 +10,55 @@ import java.util.Scanner;
 public class LoopingConstruct {
     public static void main(String[]args){
         Scanner scn= new Scanner(System.in);
-        float input; // asks the user input
-        float tot;   //total of all 5 values
-        float avg;   //average- 5 / total
-        float max;   //maximum
-        float min;   //minimum
+        float val; // asks the user input
+        float tot  ;   //total of all 5 values
+        float avg ;   //average- total / 5
         float interest; //interest on total 20% or total * .2
+        float max ;   //maximum
+        float min ;   //minimum
+        int numInputs =1;
+        float sumTot =0;
         //collect the 5 values from user //
-        System.out.print("Please enter your five values: ");
-        input = scn.nextFloat();
+        System.out.println("Please enter your five values: ");
+        val =scn.nextFloat();
+        while(val >= val ){
+            sumTot +=val;
+            val = scn.nextFloat();
+            ++numInputs;
+            if(numInputs ==5){    //if statement to limit the amount of inputs
+                tot = sumTot + val;
+               System.out.println("Your total is: " +tot);
+               avg = tot / 5;
+               System.out.println("Your average value is: " + avg);
+               interest = (float) (tot * .2);
+               System.out.println("Your interest is: " + interest);
 
+
+
+
+
+
+
+            }
 
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
