@@ -34,10 +34,10 @@ public class LoopingConstruct {
             }
             if(numInputs ==5){    //if statement to limit the amount of inputs
                tot = sumTot + val;
-               System.out.println("Your total is: " +tot);
                avg = tot / 5;
-               System.out.println("Your average value is: " + avg);
                interest = (float) (tot * .2);
+               System.out.println("Your total is: " +tot);
+               System.out.println("Your average value is: " + avg);
                System.out.println("Your interest is: " + interest);
                System.out.println("Your maximum value is: "+max);
             }
